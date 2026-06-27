@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | The Carolina Farm Post | Wedding Venue Louisburg, NC</title>
+  <meta name="description" content="Browse photos of The Carolina Farm Post, a modern barn wedding venue in Louisburg, NC. See the barn, ceremony grounds, bridal suite, and more."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.thecarolinafarmpost.com/gallery.html"/>
+  <meta property="og:title" content="Gallery | The Carolina Farm Post"/>
+  <meta property="og:description" content="Browse photos of our modern barn wedding venue in Louisburg, NC serving Franklin County, Raleigh, and the Triangle area."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.thecarolinafarmpost.com/gallery.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --c:#f7f1e8;--ln:#ede3cf;--wh:#fdfaf4;--s:#2b1d12;--bk:#5c3d28;
+  --sg:#7d9170;--gd:#b8935a;--gd2:#d4aa72;--ash:#a09282;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--c);color:var(--s);font-family:'Montserrat',sans-serif;font-weight:300;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9000;opacity:.6}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 4rem;background:rgba(247,241,232,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(184,147,90,.15);transition:all .5s}
+.nav-logo{font-family:'Cormorant',serif;font-weight:400;font-size:1.1rem;letter-spacing:.2em;text-transform:uppercase;color:var(--s);text-decoration:none}
+.nav-links{display:flex;gap:2.8rem;list-style:none}
+.nav-links a{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ash);text-decoration:none;transition:color .3s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gd);transition:width .3s}
+.nav-links a:hover{color:var(--s)}.nav-links a:hover::after{width:100%}
+.nav-links a.active{color:var(--s)}.nav-links a.active::after{width:100%}
+
+/* PAGE HEADER */
+.page-header{background:var(--s);padding:10rem 2rem 5rem;text-align:center;position:relative;overflow:hidden}
+.page-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(184,147,90,.08) 0%,transparent 70%)}
+.page-header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gd),transparent);opacity:.4}
+.page-header-inner{position:relative;z-index:1;opacity:0;transform:translateY(20px);animation:fadeUp .9s .2s forwards}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+.eyebrow-light{font-size:.58rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gd);display:flex;align-items:center;justify-content:center;gap:.8rem;margin-bottom:1rem}
+.eyebrow-light::before,.eyebrow-light::after{content:'';display:block;width:28px;height:1px;background:var(--gd);opacity:.6}
+.page-header h1{font-family:'Cormorant',serif;font-weight:300;font-size:clamp(2.4rem,5vw,4rem);color:#fff;line-height:1.1}
+.page-header h1 em{font-style:italic;color:#e8d0a8}
+.page-header p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.15rem;color:rgba(255,255,255,.55);margin-top:1rem}
+
+/* FILTER TABS */
+.filter-wrap{background:var(--wh);border-bottom:1px solid var(--ln);position:sticky;top:64px;z-index:100;padding:.8rem 2rem}
+.filter-inner{max-width:1360px;margin:0 auto;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.filter-btn{padding:.5rem 1.4rem;font-family:'Montserrat',sans-serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--ln);background:transparent;color:var(--ash);cursor:pointer;transition:all .25s}
+.filter-btn:hover{border-color:var(--gd);color:var(--s)}
+.filter-btn.on{background:var(--s);border-color:var(--s);color:var(--c)}
+
+/* MASONRY GALLERY */
+.gallery-section{padding:5rem 2rem 8rem}
+.gallery-section-inner{max-width:1360px;margin:0 auto}
+
+.masonry{columns:3;column-gap:8px}
+.masonry-item{break-inside:avoid;margin-bottom:8px;position:relative;overflow:hidden;cursor:pointer}
+.masonry-item img{width:100%;display:block;transition:transform .7s ease,filter .4s}
+.masonry-item:hover img{transform:scale(1.04);filter:brightness(1.05)}
+.masonry-item::after{content:'';position:absolute;inset:0;background:rgba(43,29,18,0);transition:background .4s}
+.masonry-item:hover::after{background:rgba(43,29,18,.15)}
+.masonry-item-overlay{position:absolute;bottom:0;left:0;right:0;padding:1.5rem;background:linear-gradient(to top,rgba(43,29,18,.7),transparent);opacity:0;transition:opacity .4s;z-index:2}
+.masonry-item:hover .masonry-item-overlay{opacity:1}
+.masonry-item-label{font-family:'Cormorant',serif;font-size:.95rem;color:#fff;letter-spacing:.1em}
+.masonry-item-expand{position:absolute;top:1rem;right:1rem;width:32px;height:32px;background:rgba(247,241,232,.85);display:flex;align-items:center;justify-content:center;font-size:.7rem;opacity:0;transition:opacity .3s;z-index:2}
+.masonry-item:hover .masonry-item-expand{opacity:1}
+
+/* hidden items for filtering */
+.masonry-item.hidden{display:none}
+
+/* BACK LINK */
+.back-wrap{max-width:1360px;margin:0 auto;padding:0 0 2rem}
+.back-link{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ash);text-decoration:none;display:inline-flex;align-items:center;gap:.6rem;transition:color .3s}
+.back-link:hover{color:var(--s)}
+.back-link::before{content:'←'}
+
+/* CTA STRIP */
+.cta-strip{background:var(--ln);padding:5rem 2rem;text-align:center}
+.cta-strip h2{font-family:'Cormorant',serif;font-weight:300;font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--s);margin-bottom:1.2rem}
+.cta-strip h2 em{font-style:italic;color:var(--bk)}
+.cta-strip p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--bk);margin-bottom:2.5rem}
+.btn-gold{display:inline-block;padding:.9rem 2.6rem;background:var(--gd);color:var(--s);font-family:'Montserrat',sans-serif;font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gd);transition:all .35s}
+.btn-gold:hover{background:var(--gd2);border-color:var(--gd2)}
+
+/* FOOTER */
+footer{background:var(--s);padding:3rem 4rem}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-bottom p{font-size:.65rem;color:rgba(255,255,255,.2);letter-spacing:.08em}
+.footer-logo img{height:60px;opacity:.7;filter:brightness(0) invert(1)}
+
+/* LIGHTBOX */
+.lb{display:none;position:fixed;inset:0;background:rgba(15,8,3,.96);z-index:9999;align-items:center;justify-content:center;flex-direction:column}
+.lb.on{display:flex}
+.lb-img-wrap{position:relative;max-width:90vw;max-height:84vh}
+.lb img{max-width:90vw;max-height:84vh;object-fit:contain;display:block}
+.lb-close{position:absolute;top:2rem;right:2.5rem;background:none;border:none;color:rgba(255,255,255,.5);font-size:1.8rem;cursor:pointer;line-height:1;transition:color .2s}
+.lb-close:hover{color:#fff}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:none;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);font-size:1.2rem;width:44px;height:44px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.lb-nav:hover{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.5)}
+.lb-prev{left:1.5rem}
+.lb-next{right:1.5rem}
+.lb-counter{margin-top:1rem;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* HAMBURGER MENU */
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:.4rem;z-index:600}
+.nav-hamburger span{display:block;width:24px;height:1px;background:var(--s);transition:all .3s}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.nav-mobile{display:none;position:fixed;inset:0;background:var(--c);z-index:500;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem}
+.nav-mobile.open{display:flex}
+.nav-mobile a{font-family:'Cormorant',serif;font-size:2.2rem;font-weight:300;letter-spacing:.08em;color:var(--s);text-decoration:none;transition:color .3s}
+.nav-mobile a:hover{color:var(--gd)}
+.nav-mobile-divider{width:40px;height:1px;background:var(--gd);opacity:.4}
+.nav-mobile-close{position:absolute;top:1.8rem;right:1.8rem;background:none;border:none;font-size:1.6rem;color:var(--ash);cursor:pointer;line-height:1}
+
+@media(max-width:900px){
+  nav{padding:1rem 1.4rem}
+  .nav-links{display:none}
+  .nav-hamburger{display:flex}
+  .masonry{columns:2}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+@media(max-width:560px){
+  .masonry{columns:1}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">The Carolina Farm Post</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">Our Story</a></li>
+    <li><a href="index.html#gallery" class="active">Gallery</a></li>
+    <li><a href="index.html#pricing">Pricing</a></li>
+    <li><a href="index.html#contact">Book a Visit</a></li>
+    <li><a href="vendors.html">Preferred Vendors</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu overlay -->
+<div class="nav-mobile" id="nav-mobile">
+  <button class="nav-mobile-close" onclick="toggleMenu()">×</button>
+  <a href="index.html#about"   onclick="toggleMenu()">Our Story</a>
+  <div class="nav-mobile-divider"></div>
+  <a href="index.html#gallery" onclick="toggleMenu()">Gallery</a>
+  <div class="nav-mobile-divider"></div>
+  <a href="index.html#contact" onclick="toggleMenu()">Book a Visit</a>
+  <div class="nav-mobile-divider"></div>
+  <a href="index.html#reserve" onclick="toggleMenu()">How It Works</a>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="eyebrow-light">The Carolina Farm Post</p>
+    <h1>Our <em>Gallery</em></h1>
+    <p>A glimpse into the beauty of the farm</p>
+  </div>
+</div>
+
+<!-- FILTER TABS -->
+<div class="filter-wrap">
+  <div class="filter-inner">
+    <button class="filter-btn on" onclick="filter('all', this)">All Photos</button>
+    <button class="filter-btn" onclick="filter('venue', this)">The Venue</button>
+    <button class="filter-btn" onclick="filter('ceremony', this)">Ceremonies</button>
+    <button class="filter-btn" onclick="filter('reception', this)">Receptions</button>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="gallery-section-inner">
+    <div class="back-wrap">
+      <a href="index.html" class="back-link">Back to main site</a>
+    </div>
+
+    <!-- 
+      ✅ TO ADD YOUR OWN PHOTOS:
+      1. Put your images in an "images" folder next to this file
+      2. Replace src="https://images.unsplash.com/..." with src="images/your-photo.jpeg"
+      3. Update the data-category to match: venue / ceremony / reception / details
+      4. Update the label text inside .masonry-item-label
+      5. Add or remove <div class="masonry-item"> blocks as needed
+    -->
+
+    <div class="masonry" id="masonry">
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/exterior-blue.jpeg" alt="Barn at blue hour" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Barn</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/barn-night.jpeg" alt="Barn at night" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Barn</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="ceremony" onclick="openLb(this)">
+        <img src="images/bridal-party.jpeg" alt="Bridal party" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Bridal Party</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="reception" onclick="openLb(this)">
+        <img src="images/reception-setup.jpeg" alt="Reception setup" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Reception</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="ceremony" onclick="openLb(this)">
+        <img src="images/chimney-aerial-ceremony.jpeg" alt="Aerial view of ceremony with chimneys" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Ceremony Grounds</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="ceremony" onclick="openLb(this)">
+        <img src="images/ceremony-drone.jpeg" alt="Ceremony from above" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Ceremony Grounds</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/barn-golden-hour.jpeg" alt="Barn at golden hour" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Barn</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="details" onclick="openLb(this)">
+        <img src="images/wedding-florals.jpeg" alt="Wedding flowers" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Florals</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/venue-aerial.jpeg" alt="Venue aerial view" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Venue</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/lean-to-side-view.jpeg" alt="The Pavilion" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Pavilion</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="ceremony" onclick="openLb(this)">
+        <img src="images/couple-portrait.jpeg" alt="Couple portrait" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Couple</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/cows.jpeg" alt="Cattle on the farm" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Farm</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="reception" onclick="openLb(this)">
+        <img src="images/barn-interior.jpeg" alt="Barn interior" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Barn Interior</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="ceremony" onclick="openLb(this)">
+        <img src="images/grooms-party.jpeg" alt="Grooms party" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Grooms Party</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/pavilion-evening.jpeg" alt="Pavilion in the evening" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Pavilion</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/night-barrels.jpeg" alt="Barrel cocktail tables at night" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Cocktail Hour</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/pavilion-drone.jpeg" alt="Pavilion aerial" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Pavilion</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="ceremony" onclick="openLb(this)">
+        <img src="images/couple-ceremony-setup.jpeg" alt="Couple at ceremony" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Ceremony</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/barn-vibrant.jpeg" alt="The Barn" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Barn</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="details" onclick="openLb(this)">
+        <img src="images/boots.jpeg" alt="Wedding boots" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Details</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/barn-dusk-aerial.jpeg" alt="Barn at dusk aerial" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Venue</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/couple-carriage-barn.jpeg" alt="Couple with carriage at barn" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Carriage Send-Off</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="reception" onclick="openLb(this)">
+        <img src="images/reception-tables.jpeg" alt="Reception tables" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Table Settings</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/farm-grounds.jpeg" alt="Farm grounds" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Grounds</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/bridal-suite.jpeg" alt="Bridal Suite" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Bridal Suite</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="ceremony" onclick="openLb(this)">
+        <img src="images/ceremony-wide.jpeg" alt="Wedding ceremony" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Ceremony</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/pavilion-overview.jpeg" alt="The Pavilion" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Pavilion</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="details" onclick="openLb(this)">
+        <img src="images/wedding-rings.jpeg" alt="Wedding rings" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Rings</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/barn-golden-closeup.jpeg" alt="Barn golden hour close up" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">The Barn</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/pavilion-barrels.jpeg" alt="Barrel cocktail tables" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Cocktail Hour</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="details" onclick="openLb(this)">
+        <img src="images/wedding-cake.jpeg" alt="Wedding cake" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Cake</p></div>
+      </div>
+
+      <div class="masonry-item reveal" data-category="ceremony" onclick="openLb(this)">
+        <img src="images/ceremony-aisle.jpeg" alt="Ceremony aisle" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Ceremony Aisle</p></div>
+      </div>
+
+      <!-- GROOMS SUITE — uncomment when photo is ready
+      <div class="masonry-item reveal" data-category="venue" onclick="openLb(this)">
+        <img src="images/grooms-suite.jpeg" alt="Grooms Suite" loading="lazy"/>
+        <div class="masonry-item-expand">⤢</div>
+        <div class="masonry-item-overlay"><p class="masonry-item-label">Grooms Suite</p></div>
+      </div>
+      -->
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <h2>Ready to see it <em>in person?</em></h2>
+  <p>Tours are available by appointment. We would love to show you around.</p>
+  <a href="index.html#contact" class="btn-gold">Book a Tour</a>
+</div>
+
+<!-- Photo credit -->
+<div style="background:var(--c);padding:1.5rem 2rem;text-align:center;border-top:1px solid var(--ln)">
+  <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--ash)">Select photography by <a href="https://milawilsonphotography.com/" target="_blank" style="color:var(--bk);text-decoration:underline">Mila Wilson Photography</a></p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <div class="footer-logo">
+      <!-- ✅ SWAP src with logo.png -->
+      <img src="logo.png" alt="The Carolina Farm Post"/>
+    </div>
+    <p>© 2026 The Carolina Farm Post · Louisburg, NC</p>
+    <p>thecarolinafarmpost@gmail.com</p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb">
+  <button class="lb-close" onclick="closeLb()">×</button>
+  <button class="lb-nav lb-prev" onclick="navLb(-1)">‹</button>
+  <div class="lb-img-wrap">
+    <img id="lb-img" src="" alt=""/>
+  </div>
+  <button class="lb-nav lb-next" onclick="navLb(1)">›</button>
+  <p class="lb-counter" id="lb-counter"></p>
+</div>
+
+<script>
+  // Hamburger menu
+  function toggleMenu() {
+    document.getElementById('hamburger').classList.toggle('open');
+    document.getElementById('nav-mobile').classList.toggle('open');
+    document.body.style.overflow =
+      document.getElementById('nav-mobile').classList.contains('open') ? 'hidden' : '';
+  }
+
+  // Reveal on scroll
+  const ro = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+        ro.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  // Filter
+  function filter(cat, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    document.querySelectorAll('.masonry-item').forEach(item => {
+      if (cat === 'all' || item.dataset.category === cat) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+  }
+
+  // Lightbox
+  let currentIndex = 0;
+  function visibleItems() {
+    return [...document.querySelectorAll('.masonry-item:not(.hidden)')];
+  }
+  function openLb(el) {
+    const items = visibleItems();
+    currentIndex = items.indexOf(el);
+    showLbItem();
+    document.getElementById('lb').classList.add('on');
+  }
+  function showLbItem() {
+    const items = visibleItems();
+    document.getElementById('lb-img').src = items[currentIndex].querySelector('img').src;
+    document.getElementById('lb-counter').textContent = `${currentIndex + 1} / ${items.length}`;
+  }
+  function navLb(dir) {
+    const items = visibleItems();
+    currentIndex = (currentIndex + dir + items.length) % items.length;
+    showLbItem();
+  }
+  function closeLb() { document.getElementById('lb').classList.remove('on'); }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowRight') navLb(1);
+    if (e.key === 'ArrowLeft') navLb(-1);
+  });
+</script>
+</body>
+</html>

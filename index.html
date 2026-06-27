@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Carolina Farm Post | Wedding Venue in Louisburg, NC</title>
+  <meta name="description" content="The Carolina Farm Post is a modern barn wedding venue in Louisburg, NC serving Franklin County, Raleigh, and the Triangle area. A brand new farm venue set among working cattle and historic Carolina farmland. Up to 175 guests."/>
+  <meta name="keywords" content="wedding venue Louisburg NC, barn wedding venue North Carolina, farm wedding venue Raleigh, Franklin County wedding venue, Triangle NC wedding venue, modern barn wedding, Carolina wedding venue, outdoor wedding venue NC"/>
+  <meta name="author" content="The Carolina Farm Post"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.thecarolinafarmpost.com/"/>
+
+  <!-- Open Graph — controls how the site looks when shared on Facebook, Instagram etc -->
+  <meta property="og:title" content="The Carolina Farm Post | Wedding Venue in Louisburg, NC"/>
+  <meta property="og:description" content="A modern barn wedding venue set among working cattle and historic Carolina farmland. Serving Franklin County, Raleigh, and the Triangle area."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.thecarolinafarmpost.com/"/>
+  <!-- ✅ Add a photo here once you have one: <meta property="og:image" content="https://www.thecarolinafarmpost.com/images/barn-exterior.jpeg"/> -->
+
+  <!-- Twitter/X card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="The Carolina Farm Post | Wedding Venue in Louisburg, NC"/>
+  <meta name="twitter:description" content="A modern barn wedding venue set among working cattle and historic Carolina farmland. Serving the Triangle area of North Carolina."/>
+
+  <!-- Structured data — helps Google understand this is a wedding venue business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventVenue",
+    "name": "The Carolina Farm Post",
+    "description": "A modern barn wedding venue in Louisburg, NC set among working cattle and historic Carolina farmland. Up to 175 guests.",
+    "url": "https://www.thecarolinafarmpost.com/",
+    "telephone": "",
+    "email": "thecarolinafarmpost@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3634 NC-56",
+      "addressLocality": "Louisburg",
+      "addressRegion": "NC",
+      "postalCode": "27549",
+      "addressCountry": "US"
+    },
+    "priceRange": "$3500 - $6500",
+    "maximumAttendeeCapacity": 175,
+    "sameAs": [
+      "https://www.instagram.com/thecarolinafarmpost",
+      "https://www.facebook.com/share/1DBT3cBZZ6/?mibextid=wwXIfr"
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <style>
+
+    /* ============================================================
+       DESIGN TOKENS — update colors here to restyle the whole site
+       ============================================================ */
+    :root {
+      --c:   #f7f1e8;  /* canvas (main background) */
+      --ln:  #ede3cf;  /* linen (secondary background) */
+      --wh:  #fdfaf4;  /* off-white */
+      --s:   #2b1d12;  /* soil (darkest text) */
+      --bk:  #5c3d28;  /* bark (body text) */
+      --sg:  #7d9170;  /* sage (eyebrow labels) */
+      --gd:  #b8935a;  /* gold */
+      --gd2: #d4aa72;  /* gold light */
+      --ash: #a09282;  /* ash (muted text) */
+    }
+
+
+    /* ============================================================
+       RESET & BASE
+       ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background: var(--c);
+      color: var(--s);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subtle paper texture overlay */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9000;
+      opacity: .6;
+    }
+
+
+    /* ============================================================
+       NAVIGATION
+       ============================================================ */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 4rem;
+      transition: all .5s;
+    }
+
+    /* Nav background appears on scroll (via JS) */
+    nav.scrolled {
+      padding: 1.2rem 4rem;
+      background: rgba(247,241,232,.92);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(184,147,90,.15);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant', serif;
+      font-weight: 400;
+      font-size: 1.1rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      transition: color .3s;
+    }
+
+    nav.scrolled .nav-logo { color: var(--s); }
+
+    .nav-links {
+      display: flex;
+      gap: 2.8rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: .62rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.9);
+      text-decoration: none;
+      transition: color .3s;
+      position: relative;
+      font-weight: 400;
+    }
+
+    /* Gold underline hover effect */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--gd);
+      transition: width .3s;
+    }
+
+    .nav-links a:hover { color: #fff; }
+    .nav-links a:hover::after { width: 100%; }
+    nav.scrolled .nav-links a { color: var(--bk); }
+    nav.scrolled .nav-links a:hover { color: var(--s); }
+
+
+    /* ============================================================
+       HERO
+       ============================================================ */
+    .hero {
+      position: relative;
+      height: 92vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Cream background with subtle gold radial glow */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .hero-bg video {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Light cream overlay so logo/text stay readable over the video */
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(20,10,5,.35);
+      z-index: 1;
+    }
+
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gd), transparent);
+      opacity: .4;
+      z-index: 2;
+    }
+
+    /* Fade + rise animation on page load */
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      opacity: 0;
+      transform: translateY(32px);
+      animation: fadeUp 1.4s .4s forwards;
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: rgba(255,255,255,.85);
+      margin-top: 1.6rem;
+      letter-spacing: .06em;
+      text-shadow: 0 1px 8px rgba(0,0,0,.3);
+    }
+
+    .hero-cta {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    /* Scroll indicator (animated line at bottom of hero) */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      opacity: 0;
+      animation: fadeUp 1s 1.6s forwards;
+    }
+
+    .scroll-track {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, rgba(255,255,255,.5), transparent);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scroll-dot {
+      width: 1px;
+      height: 16px;
+      background: #fff;
+      position: absolute;
+      top: -16px;
+      animation: scrollDrop 2.2s ease-in-out infinite;
+    }
+
+    @keyframes scrollDrop {
+      0%   { top: -16px; opacity: 0; }
+      30%  { opacity: 1; }
+      100% { top: 48px; opacity: 0; }
+    }
+
+
+    /* ============================================================
+       BUTTONS
+       ============================================================ */
+    .btn-ghost {
+      display: inline-block;
+      padding: .9rem 2.6rem;
+      border: 1px solid rgba(255,255,255,.6);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .62rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all .35s;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255,255,255,.15);
+      border-color: #fff;
+    }
+
+    .btn-gold {
+      display: inline-block;
+      padding: .9rem 2.6rem;
+      background: var(--gd);
+      color: var(--s);
+      font-family: 'Montserrat', sans-serif;
+      font-size: .62rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--gd);
+      transition: all .35s;
+    }
+
+    .btn-gold:hover {
+      background: var(--gd2);
+      border-color: var(--gd2);
+    }
+
+
+    /* ============================================================
+       SHARED / COMMON ELEMENTS
+       ============================================================ */
+
+    /* Small uppercase label above headings */
+    .eyebrow {
+      font-size: .58rem;
+      letter-spacing: .35em;
+      text-transform: uppercase;
+      color: var(--sg);
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .eyebrow::after {
+      content: '';
+      flex: 0 0 28px;
+      height: 1px;
+      background: var(--sg);
+    }
+
+    /* Main section headings */
+    h2.serif {
+      font-family: 'Cormorant', serif;
+      font-weight: 300;
+      font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+      line-height: 1.1;
+      color: var(--s);
+    }
+
+    h2.serif em {
+      font-style: italic;
+      color: var(--bk);
+    }
+
+    /* Body paragraph text */
+    .body-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      line-height: 2;
+      color: var(--s);
+      font-weight: 400;
+    }
+
+    /* Scroll reveal animations (triggered by JS IntersectionObserver) */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .9s ease, transform .9s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .reveal-l {
+      opacity: 0;
+      transform: translateX(-24px);
+      transition: opacity .9s ease, transform .9s ease;
+    }
+
+    .reveal-l.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+
+    /* ============================================================
+       OUR STORY SECTION
+       ============================================================ */
+    .story-wrap {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+
+    .story-img-col {
+      position: relative;
+      overflow: hidden;
+      background: var(--ln);
+    }
+
+    .story-img-col img {
+      width: 100%;
+      height: 100%;
+      min-height: 640px;
+      object-fit: cover;
+      display: block;
+      transition: transform .9s ease;
+    }
+
+    .story-img-col:hover img {
+      transform: scale(1.04);
+    }
+
+    /* "Est. 2025 · Louisburg, NC" badge overlaid on photo */
+    .story-img-badge {
+      position: absolute;
+      bottom: 3rem;
+      right: -1px;
+      background: var(--ln);
+      padding: 1.5rem 2rem;
+      font-family: 'Cormorant', serif;
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--bk);
+      border-left: 2px solid var(--gd);
+    }
+
+    .story-text-col {
+      padding: 7rem 6rem;
+      background: var(--ln);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+    /* ============================================================
+       FEATURES / WHAT WE OFFER
+       ============================================================ */
+    .features-wrap {
+      background: var(--s);
+      padding: 8rem 2rem;
+    }
+
+    .features-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .features-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 5rem;
+      gap: 2rem;
+    }
+
+    /* Override eyebrow color for dark background */
+    .features-head .eyebrow { color: var(--gd); }
+    .features-head .eyebrow::after { background: var(--gd); }
+    .features-head h2.serif { color: var(--ln); }
+    .features-head h2.serif em { color: var(--gd2); }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,.06);
+    }
+
+    /* Last card spans full width if odd number */
+    .feat-card:last-child:nth-child(3n+1) {
+      grid-column: 1 / -1;
+    }
+
+    .feat-card {
+      background: var(--s);
+      padding: 3rem 2.5rem;
+      transition: background .3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Gold underline appears on hover */
+    .feat-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gd), transparent);
+      transform: scaleX(0);
+      transition: transform .4s;
+    }
+
+    .feat-card:hover { background: rgba(255,255,255,.04); }
+    .feat-card:hover::before { transform: scaleX(1); }
+
+    .feat-num {
+      font-family: 'Cormorant', serif;
+      font-size: 4rem;
+      font-weight: 300;
+      color: rgba(255,255,255,.06); /* very subtle background number */
+      line-height: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    .feat-title {
+      font-family: 'Cormorant', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--ln);
+      margin-bottom: .8rem;
+      letter-spacing: .04em;
+    }
+
+    .feat-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.65);
+      line-height: 1.9;
+    }
+
+
+    /* ============================================================
+       GALLERY (homepage teaser)
+       ============================================================ */
+    .gallery-wrap {
+      background: var(--c);
+      padding: 8rem 2rem;
+    }
+
+    .gallery-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+    }
+
+    .gallery-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: end;
+      margin-bottom: 3.5rem;
+    }
+
+    /* Editorial mosonry-style grid layout */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 300px 300px;
+      gap: 6px;
+    }
+
+    .gi {
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .gi img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .7s ease, filter .5s;
+    }
+
+    .gi:hover img {
+      transform: scale(1.08);
+      filter: brightness(1.05);
+    }
+
+    .gi::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(43,29,18,0);
+      transition: background .4s;
+    }
+
+    .gi:hover::after { background: rgba(43,29,18,.15); }
+
+    /* Expand icon shown on hover */
+    .gi-expand {
+      position: absolute;
+      bottom: 1.2rem; right: 1.2rem;
+      width: 36px; height: 36px;
+      background: rgba(247,241,232,.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .7rem;
+      opacity: 0;
+      transition: opacity .3s;
+      z-index: 2;
+    }
+
+    .gi:hover .gi-expand { opacity: 1; }
+
+    /* Grid item positions — update these to change layout */
+    .g1 { grid-column: 1/6;  grid-row: 1/2; }
+    .g2 { grid-column: 6/9;  grid-row: 1/2; }
+    .g3 { grid-column: 9/13; grid-row: 1/3; }
+    .g4 { grid-column: 1/4;  grid-row: 2/3; }
+    .g5 { grid-column: 4/9;  grid-row: 2/3; }
+
+
+    /* ============================================================
+       CONTACT / BOOK A VISIT
+       ============================================================ */
+    .contact-wrap {
+      background: var(--wh);
+      padding: 8rem 2rem;
+    }
+
+    .contact-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 8rem;
+      align-items: start;
+    }
+
+    /* Left column sticks while scrolling on desktop */
+    .contact-aside {
+      position: sticky;
+      top: 8rem;
+    }
+
+    .contact-aside .body-text {
+      max-width: 360px;
+      margin-bottom: 3rem;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+    }
+
+    .contact-icon {
+      width: 36px; height: 36px;
+      border: 1px solid var(--ln);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .9rem;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+
+    .contact-item-text p:first-child {
+      font-size: .58rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--ash);
+      margin-bottom: .3rem;
+    }
+
+    .contact-item-text p:last-child {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.08rem;
+      color: var(--bk);
+    }
+
+
+    /* ============================================================
+       HOW IT WORKS / BOOKING PROCESS
+       ============================================================ */
+    .hiw-wrap {
+      background: var(--c);
+      padding: 8rem 2rem;
+      border-top: 1px solid var(--ln);
+    }
+
+    .hiw-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hiw-head {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .hiw-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      position: relative;
+    }
+
+    /* Gold connecting line between step numbers */
+    .hiw-steps::before {
+      content: '';
+      position: absolute;
+      top: 2.5rem;
+      left: calc(16.66% + 1.5rem);
+      right: calc(16.66% + 1.5rem);
+      height: 1px;
+      background: linear-gradient(90deg, var(--gd), var(--gd2), var(--gd));
+      opacity: .3;
+    }
+
+    .hiw-step {
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .step-num {
+      width: 50px; height: 50px;
+      border: 1px solid var(--gd);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant', serif;
+      font-size: 1.1rem;
+      color: var(--gd);
+      margin: 0 auto 2rem;
+      background: var(--c);
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-title {
+      font-family: 'Cormorant', serif;
+      font-size: 1.3rem;
+      color: var(--s);
+      margin-bottom: .8rem;
+    }
+
+    .step-body {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--s);
+      line-height: 1.9;
+    }
+
+    /* Dark payment info strip */
+    .hiw-note {
+      margin-top: 4rem;
+      padding: 2rem 3rem;
+      background: var(--s);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hiw-note p:first-child {
+      font-size: .58rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--gd);
+      margin-bottom: .4rem;
+    }
+
+    .hiw-note p:last-child {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      color: var(--ln);
+      line-height: 1.7;
+    }
+
+    .hiw-badges {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .badge {
+      font-size: .58rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--ash);
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+    }
+
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    footer {
+      background: var(--s);
+      padding: 5rem 4rem 3rem;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      margin-bottom: 3rem;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-nav {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .footer-nav a {
+      font-size: .6rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--ash);
+      text-decoration: none;
+      transition: color .3s;
+    }
+
+    .footer-nav a:hover { color: var(--gd2); }
+
+    /* Social icon hover */
+    .footer-top a[aria-label]:hover {
+      border-color: var(--gd);
+      color: var(--gd);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      font-size: .65rem;
+      color: rgba(255,255,255,.2);
+      letter-spacing: .08em;
+    }
+
+
+    /* ============================================================
+       LIGHTBOX (full-screen image viewer)
+       ============================================================ */
+    .lb {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15,8,3,.95);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lb.on { display: flex; }
+
+    .lb img {
+      max-width: 90vw;
+      max-height: 88vh;
+      object-fit: contain;
+    }
+
+    .lb-close {
+      position: absolute;
+      top: 2rem; right: 2.5rem;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,.5);
+      font-size: 1.8rem;
+      cursor: pointer;
+      line-height: 1;
+      transition: color .2s;
+    }
+
+    .lb-close:hover { color: #fff; }
+
+
+    /* ============================================================
+       HAMBURGER MENU — mobile only
+       ============================================================ */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: .4rem;
+      z-index: 600;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--s);
+      transition: all .3s;
+    }
+
+    /* Animates to X when menu is open */
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    /* Full-screen mobile nav overlay */
+    .nav-mobile {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--c);
+      z-index: 500;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+    }
+
+    .nav-mobile.open { display: flex; }
+
+    .nav-mobile a {
+      font-family: 'Cormorant', serif;
+      font-size: 2.2rem;
+      font-weight: 300;
+      letter-spacing: .08em;
+      color: var(--s);
+      text-decoration: none;
+      transition: color .3s;
+    }
+
+    .nav-mobile a:hover { color: var(--gd); }
+
+    /* Gold divider between mobile nav links */
+    .nav-mobile-divider {
+      width: 40px;
+      height: 1px;
+      background: var(--gd);
+      opacity: .4;
+    }
+
+    .nav-mobile-close {
+      position: absolute;
+      top: 1.8rem; right: 1.8rem;
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      color: var(--ash);
+      cursor: pointer;
+      line-height: 1;
+      transition: color .2s;
+    }
+
+    .nav-mobile-close:hover { color: var(--s); }
+
+
+    /* ============================================================
+       RESPONSIVE — mobile & tablet
+       ============================================================ */
+    @media (max-width: 960px) {
+      nav { padding: 1.4rem 1.6rem; }
+      nav.scrolled { padding: 1rem 1.6rem; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; } /* show hamburger on mobile */
+
+      .story-wrap { grid-template-columns: 1fr; }
+      .story-img-col img { min-height: 340px; }
+      .story-text-col { padding: 4rem 2rem; }
+
+      .features-head { flex-direction: column; align-items: flex-start; }
+      .features-grid { grid-template-columns: 1fr 1fr; }
+
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .g1, .g2, .g3, .g4, .g5 { grid-column: auto; grid-row: auto; }
+      .gallery-grid .gi { height: 220px; }
+
+      .contact-inner { grid-template-columns: 1fr; gap: 4rem; }
+      .contact-aside { position: static; }
+
+      /* Pricing */
+      #pricing > div > div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+      #pricing > div > div[style*="grid-template-columns:repeat(4"] { grid-template-columns: repeat(2,1fr) !important; }
+
+      .hiw-steps { grid-template-columns: 1fr; gap: 3rem; }
+      .hiw-steps::before { display: none; }
+
+      .footer-top { flex-direction: column; }
+      .footer-nav { flex-wrap: wrap; gap: 1.5rem; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       Fixed top bar — becomes opaque on scroll via JS
+       Hamburger menu shown on mobile
+       ============================================================ -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">The Carolina Farm Post</a>
+    <ul class="nav-links">
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Book a Visit</a></li>
+      <li><a href="vendors.html">Preferred Vendors</a></li>
+    </ul>
+    <!-- Hamburger button (mobile only) -->
+    <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Full-screen mobile menu overlay -->
+  <div class="nav-mobile" id="nav-mobile">
+    <button class="nav-mobile-close" onclick="toggleMenu()">×</button>
+    <a href="#about"   onclick="toggleMenu()">Our Story</a>
+    <div class="nav-mobile-divider"></div>
+    <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+    <div class="nav-mobile-divider"></div>
+    <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+    <div class="nav-mobile-divider"></div>
+    <a href="#contact" onclick="toggleMenu()">Book a Visit</a>
+    <div class="nav-mobile-divider"></div>
+    <a href="vendors.html" onclick="toggleMenu()">Preferred Vendors</a>
+    <div class="nav-mobile-divider"></div>
+    <a href="#reserve" onclick="toggleMenu()">The Process</a>
+  </div>
+
+
+  <!-- ============================================================
+       HERO
+       Full-height opening section with logo, gold accents, and CTAs
+       ✅ TO UPDATE: swap logo.png with your transparent PNG from Canva
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <!-- ✅ Drone footage of building exterior plays here on loop -->
+      <!-- poster= shows a still image while the video loads, or if video fails to play -->
+      <video autoplay muted loop playsinline poster="images/ceremony-poster.jpeg">
+        <source src="images/hero-drone.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="hero-content">
+
+      <!-- Gold ornament: line · diamond · diamond · diamond · line -->
+      <div style="display:flex;align-items:center;justify-content:center;gap:1.2rem;margin-bottom:2rem">
+        <div style="height:1px;width:80px;background:var(--gd);opacity:.7"></div>
+        <div style="width:6px;height:6px;background:var(--gd);transform:rotate(45deg);opacity:.9"></div>
+        <div style="width:4px;height:4px;background:var(--gd2);transform:rotate(45deg);opacity:.6"></div>
+        <div style="width:6px;height:6px;background:var(--gd);transform:rotate(45deg);opacity:.9"></div>
+        <div style="height:1px;width:80px;background:var(--gd);opacity:.7"></div>
+      </div>
+
+      <!-- ✅ LOGO — swap src="logo.png" if filename is different -->
+      <img src="logo.png" alt="The Carolina Farm Post" style="width:min(720px,88vw);display:block;margin:0 auto;filter:brightness(0) invert(1)"/>
+
+      <!-- Gold ornament (mirrored below logo) -->
+      <div style="display:flex;align-items:center;justify-content:center;gap:1.2rem;margin-top:2rem">
+        <div style="height:1px;width:80px;background:var(--gd);opacity:.7"></div>
+        <div style="width:6px;height:6px;background:var(--gd);transform:rotate(45deg);opacity:.9"></div>
+        <div style="width:4px;height:4px;background:var(--gd2);transform:rotate(45deg);opacity:.6"></div>
+        <div style="width:6px;height:6px;background:var(--gd);transform:rotate(45deg);opacity:.9"></div>
+        <div style="height:1px;width:80px;background:var(--gd);opacity:.7"></div>
+      </div>
+
+      <p class="hero-sub" style="margin-top:1.8rem">A brand new barn venue set among working cattle and historic Carolina farmland</p>
+
+      <div class="hero-cta">
+        <a href="#gallery" class="btn-ghost">View Gallery</a>
+        <a href="#contact" class="btn-gold">Inquire Now</a>
+      </div>
+
+    </div>
+
+    <!-- Subtle vertical gold lines on left and right edges -->
+    <div style="position:absolute;top:50%;left:2.5rem;transform:translateY(-50%);width:1px;height:180px;background:linear-gradient(to bottom,transparent,rgba(184,147,90,.35),transparent)"></div>
+    <div style="position:absolute;top:50%;right:2.5rem;transform:translateY(-50%);width:1px;height:180px;background:linear-gradient(to bottom,transparent,rgba(184,147,90,.35),transparent)"></div>
+
+    <!-- Animated scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-track">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Gold divider between hero and story -->
+  <div style="height:1px;background:linear-gradient(to right,transparent,var(--gd),transparent);opacity:.5"></div>
+
+
+  <!-- ============================================================
+       OUR STORY
+       Split layout: photo left, text right
+       ✅ TO UPDATE: replace Unsplash src with your own photo path
+       ============================================================ -->
+  <section id="about" style="padding:0;background:var(--ln)">
+    <div class="story-wrap">
+
+      <!-- Left: photo with location badge -->
+      <div class="story-img-col">
+        <!-- ✅ REPLACE with your own photo: src="images/barn-exterior.jpeg" -->
+        <img src="images/barn-exterior.jpeg" alt="The Carolina Farm Post exterior" loading="lazy"/>
+      </div>
+
+      <!-- Right: copy -->
+      <div class="story-text-col reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="serif" style="margin-bottom:1.8rem">Built new.<br/><em>Rooted deep.</em></h2>
+        <p class="body-text">
+          The Carolina Farm Post was built from the ground up on land that has fed families for generations.
+          Surrounded by working cattle and some of the most beautiful open farmland in the Carolina Piedmont,
+          it's the kind of place that feels special the moment you turn down the driveway.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHAT WE OFFER (Features)
+       Dark barn-wood background with 6 feature cards
+       ============================================================ -->
+  <section class="features-wrap">
+    <div class="features-inner">
+
+      <div class="features-head reveal">
+        <div>
+          <p class="eyebrow">What We Offer</p>
+          <h2 class="serif">Everything your<br/><em>day deserves</em></h2>
+        </div>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:rgba(255,255,255,.4);line-height:1.9;max-width:340px">
+          Brand new construction on historic farmland. Here's what's included.
+        </p>
+      </div>
+
+      <div class="features-grid reveal">
+        <div class="feat-card">
+          <div class="feat-num">01</div>
+          <h3 class="feat-title">The Main Barn</h3>
+          <p class="feat-body">3,500 sq ft of soaring timber and warm lighting with plenty of room for dinner, dancing, and up to 175 guests.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-num">02</div>
+          <h3 class="feat-title">Ceremony Grounds</h3>
+          <p class="feat-body">Exchange your vows surrounded by historic stone chimneys, timber frames, and lush Carolina farmland. A ceremony setting unlike anything else in the region.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-num">03</div>
+          <h3 class="feat-title">Bridal Suite</h3>
+          <p class="feat-body">A beautifully appointed suite inside the barn, designed for the bride and her party. Natural light, vanity space, and a calm retreat to start your morning right.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-num">04</div>
+          <h3 class="feat-title">Grooms Suite</h3>
+          <p class="feat-body">A dedicated space for the groom and his party, tucked inside the barn. Comfortable and private, ready for the moments before you walk out to meet her.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-num">05</div>
+          <h3 class="feat-title">The Pavilion</h3>
+          <p class="feat-body">The attached Pavilion features barrel cocktail tables and an outdoor bar, a natural flow from the ceremony into the evening. It also serves as a covered backup for outdoor ceremonies.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-num">06</div>
+          <h3 class="feat-title">Catering Kitchen</h3>
+          <p class="feat-body">A fully equipped prep kitchen accommodates any licensed catering team. The serving window bar keeps the flow going between the kitchen and your guests all night.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PRICING
+       2026 and 2027 Saturday wedding pricing
+       ============================================================ -->
+  <section id="pricing" style="background:var(--wh);padding:8rem 2rem">
+    <div style="max-width:1100px;margin:0 auto">
+
+      <div class="reveal" style="text-align:center;margin-bottom:5rem">
+        <p class="eyebrow" style="justify-content:center">Pricing</p>
+        <h2 class="serif" style="text-align:center">Transparent <em>pricing</em></h2>
+        <p class="body-text" style="max-width:520px;margin:1.2rem auto 0;text-align:center">
+          Saturday weddings include full venue access from 9:00 AM to 11:00 PM, everything you need for the perfect day.
+        </p>
+      </div>
+
+      <!-- Pricing cards -->
+      <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:4rem">
+
+        <!-- 2026 -->
+        <div style="border:1px solid var(--ln);padding:3.5rem">
+          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--ln)">
+            <div style="flex:1">
+              <p style="font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--sg);margin-bottom:.4rem">2026 Saturdays</p>
+              <h3 style="font-family:'Cormorant',serif;font-size:1.8rem;font-weight:300;color:var(--s)">June – December</h3>
+            </div>
+            <div style="text-align:right">
+              <p style="font-family:'Cormorant',serif;font-size:3rem;font-weight:300;color:var(--gd);line-height:1">$3,500</p>
+            </div>
+          </div>
+          <p class="body-text" style="font-size:1rem;margin-bottom:1.5rem">Limited 2026 dates available. Book early to secure your preferred Saturday.</p>
+          <a href="#contact" class="btn-gold" style="display:block;text-align:center">Inquire Now</a>
+        </div>
+
+        <!-- 2027 -->
+        <div style="border:1px solid var(--gd);padding:3.5rem;position:relative">
+          <div style="position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--gd);padding:.3rem 1.2rem">
+            <p style="font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--wh)">Now Booking</p>
+          </div>
+          <div style="margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--ln)">
+            <p style="font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--sg);margin-bottom:1rem">2027 Saturdays</p>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.8rem">
+              <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ash)">March – June &amp; September – October</p>
+              <p style="font-family:'Cormorant',serif;font-size:2.4rem;font-weight:300;color:var(--gd);line-height:1">$6,500</p>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline">
+              <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ash)">July – August &amp; November – December</p>
+              <p style="font-family:'Cormorant',serif;font-size:2.4rem;font-weight:300;color:var(--s);line-height:1">$6,000</p>
+            </div>
+          </div>
+          <p class="body-text" style="font-size:1rem;margin-bottom:1.5rem">Peak season dates tend to book quickly. We recommend reaching out early to secure your date.</p>
+          <a href="#contact" class="btn-gold" style="display:block;text-align:center">Inquire Now</a>
+        </div>
+
+      </div>
+
+      <!-- What's included -->
+      <div class="reveal" style="background:var(--ln);padding:3rem 3.5rem">
+        <p style="font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--sg);margin-bottom:1.5rem;text-align:center">Every Package Includes</p>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center">
+          <div>
+            <p style="font-size:1.4rem;margin-bottom:.5rem">🏛️</p>
+            <p style="font-family:'Cormorant',serif;font-size:1rem;color:var(--s)">Venue Access<br/>9AM – 11PM</p>
+          </div>
+          <div>
+            <p style="font-size:1.4rem;margin-bottom:.5rem">🪑</p>
+            <p style="font-family:'Cormorant',serif;font-size:1rem;color:var(--s)">Tables &amp; Chairs<br/>Up to 175 Guests</p>
+          </div>
+          <div>
+            <p style="font-size:1.4rem;margin-bottom:.5rem">🌿</p>
+            <p style="font-family:'Cormorant',serif;font-size:1rem;color:var(--s)">Ceremony Lawn</p>
+          </div>
+          <div>
+            <p style="font-size:1.4rem;margin-bottom:.5rem">🍹</p>
+            <p style="font-family:'Cormorant',serif;font-size:1rem;color:var(--s)">The Pavilion<br/>&amp; Outdoor Bar</p>
+          </div>
+          <div>
+            <p style="font-size:1.4rem;margin-bottom:.5rem">🍽️</p>
+            <p style="font-family:'Cormorant',serif;font-size:1rem;color:var(--s)">Kitchen with<br/>Serving Window Bar</p>
+          </div>
+          <div>
+            <p style="font-size:1.4rem;margin-bottom:.5rem">💐</p>
+            <p style="font-family:'Cormorant',serif;font-size:1rem;color:var(--s)">Bridal Suite</p>
+          </div>
+          <div>
+            <p style="font-size:1.4rem;margin-bottom:.5rem">🤵</p>
+            <p style="font-family:'Cormorant',serif;font-size:1rem;color:var(--s)">Grooms Suite</p>
+          </div>
+          <div>
+            <p style="font-size:1.4rem;margin-bottom:.5rem">🎤</p>
+            <p style="font-family:'Cormorant',serif;font-size:1rem;color:var(--s)">1 Hour Ceremony<br/>Rehearsal</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="reveal" style="text-align:center;margin-top:2rem;font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--ash)">
+        Friday &amp; Sunday events and weekday rentals available. <a href="#contact" style="color:var(--bk);text-decoration:underline">Contact us for pricing</a>.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALLERY (teaser)
+       Shows 5 photos in an editorial grid layout
+       Full gallery is on gallery.html
+       ✅ TO UPDATE: replace Unsplash src values with your own photos
+       ============================================================ -->
+  <section class="gallery-wrap" id="gallery">
+    <div class="gallery-inner">
+
+      <div class="gallery-head">
+        <div class="reveal-l">
+          <p class="eyebrow">Gallery</p>
+          <h2 class="serif">See the<br/><em>full picture</em></h2>
+        </div>
+        <p class="body-text reveal" style="max-width:380px">A glimpse into the beauty of the farm. Click any image to explore.</p>
+        <a href="gallery.html" class="btn-submit reveal" style="align-self:end;text-decoration:none;display:inline-block;padding:.9rem 2.6rem;font-family:'Montserrat',sans-serif;font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;background:var(--s);color:var(--c);border:none;cursor:pointer;transition:background .3s">View Full Gallery</a>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <div class="gi g1" onclick="openLb(this)">
+          <img src="images/barn-golden-hour.jpeg" alt="Barn at golden hour"/>
+          <div class="gi-expand">⤢</div>
+        </div>
+        <div class="gi g2" onclick="openLb(this)">
+          <img src="images/ceremony-aisle.jpeg" alt="Ceremony aisle"/>
+          <div class="gi-expand">⤢</div>
+        </div>
+        <div class="gi g3" onclick="openLb(this)">
+          <img src="images/exterior-blue.jpeg" alt="Barn exterior"/>
+          <div class="gi-expand">⤢</div>
+        </div>
+        <div class="gi g4" onclick="openLb(this)">
+          <img src="images/couple-portrait.jpeg" alt="Couple portrait"/>
+          <div class="gi-expand">⤢</div>
+        </div>
+        <div class="gi g5" onclick="openLb(this)">
+          <img src="images/reception-setup.jpeg" alt="Reception setup"/>
+          <div class="gi-expand">⤢</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT / BOOK A VISIT
+       Left: contact info (sticky on desktop)
+       Right: HoneyBook embed placeholder
+       ✅ TO UPDATE: paste HoneyBook embed code in marked section
+       ============================================================ -->
+  <section class="contact-wrap" id="contact">
+    <div class="contact-inner">
+
+      <!-- Left: info -->
+      <div class="contact-aside reveal-l">
+        <p class="eyebrow">Book a Visit</p>
+        <h2 class="serif" style="margin-bottom:1.8rem">Let's start<br/><em>planning</em></h2>
+        <p class="body-text">We'd love to show you around. Send us your details and we'll be in touch shortly to arrange your private tour.</p>
+
+        <div class="contact-list" style="margin-top:2.5rem">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-item-text">
+              <p>Address</p>
+              <!-- ✅ Update if address changes -->
+              <p>3634 NC-56, Louisburg, NC 27549</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-item-text">
+              <p>Email</p>
+              <p>thecarolinafarmpost@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-item-text">
+              <p>Tours</p>
+              <p>Available by appointment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: HoneyBook form -->
+      <div class="reveal" style="width:100%">
+
+        <!-- ✅ PASTE YOUR HONEYBOOK EMBED CODE BELOW THIS LINE -->
+        <div class="hb-p-6a1aca4d173c4ad708cdc9a2-1"></div><img height="1" width="1" style="display:none" src="https://www.honeybook.com/p.png?pid=6a1aca4d173c4ad708cdc9a2">
+        <script>
+          (function(h,b,s,n,i,p,e,t) {
+            h._HB_ = h._HB_ || {};h._HB_.pid = i;;;;
+            t=b.createElement(s);t.type="text/javascript";t.async=!0;t.src=n;
+            e=b.getElementsByTagName(s)[0];e.parentNode.insertBefore(t,e);
+          })(window,document,"script","https://widget.honeybook.com/assets_users_production/websiteplacements/placement-controller.min.js","6a1aca4d173c4ad708cdc9a2");
+        </script>
+        <!-- ✅ PASTE YOUR HONEYBOOK EMBED CODE ABOVE THIS LINE -->
+
+        <!-- Placeholder removed — HoneyBook form active -->
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       HOW IT WORKS
+       3-step booking process with HoneyBook payment info
+       ============================================================ -->
+  <section class="hiw-wrap" id="reserve">
+    <div class="hiw-inner">
+
+      <div class="hiw-head reveal">
+        <p class="eyebrow" style="justify-content:center">The Process</p>
+        <h2 class="serif" style="text-align:center;margin-top:.4rem">Simple, <em>straightforward</em> booking</h2>
+      </div>
+
+      <div class="hiw-steps reveal">
+        <div class="hiw-step">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Send an Inquiry</h3>
+          <p class="step-body">Fill out the contact form above with your date and details. We'll be in touch shortly to learn more about your vision.</p>
+        </div>
+        <div class="hiw-step">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Tour the Farm</h3>
+          <p class="step-body">We'll arrange a private walkthrough so you can see the barn, grounds, and cattle views in person.</p>
+        </div>
+        <div class="hiw-step">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Secure Your Date</h3>
+          <p class="step-body">Once you're ready, we'll send a deposit invoice through HoneyBook to your inbox. Pay securely and your date is locked in.</p>
+        </div>
+      </div>
+
+      <div class="hiw-note reveal">
+        <div>
+          <p>Payments via HoneyBook</p>
+          <p>Your deposit invoice arrives by email with a secure payment link with no account required. All major cards and bank transfers accepted.</p>
+        </div>
+        <div class="hiw-badges">
+          <div class="badge">🔒 SSL Encrypted</div>
+          <div class="badge">✓ All major cards</div>
+          <div class="badge">✓ Bank transfer</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ✅ TO UPDATE: swap logo src with logo.png once transparent
+       Remove filter:brightness(0) invert(1) for natural gold colors
+       ============================================================ -->
+  <footer>
+    <div class="footer-top">
+      <!-- Logo inverted white for dark background -->
+      <!-- ✅ Once you have transparent logo: remove the filter style below -->
+      <img src="logo.png" alt="The Carolina Farm Post" style="height:90px;opacity:.85;filter:brightness(0) invert(1)"/>
+      <ul class="footer-nav">
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Book a Visit</a></li>
+        <li><a href="#reserve">The Process</a></li>
+        <li><a href="vendors.html">Preferred Vendors</a></li>
+      </ul>
+      <div style="display:flex;gap:1.2rem;align-items:center">
+        <a href="https://www.instagram.com/thecarolinafarmpost" target="_blank" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(255,255,255,.15);color:var(--ash);text-decoration:none;font-size:.85rem;transition:all .3s" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/1DBT3cBZZ6/?mibextid=wwXIfr" target="_blank" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(255,255,255,.15);color:var(--ash);text-decoration:none;font-size:.85rem;transition:all .3s" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 The Carolina Farm Post · All rights reserved</p>
+      <p>thecarolinafarmpost@gmail.com</p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       LIGHTBOX
+       Full-screen image overlay — opens on gallery image click
+       ============================================================ -->
+  <div class="lb" id="lb" onclick="closeLb()">
+    <button class="lb-close" onclick="closeLb()">×</button>
+    <img id="lb-img" src="" alt=""/>
+  </div>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+  <script>
+
+    // ── Nav: add .scrolled class when user scrolls past 70px
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', scrollY > 70);
+    });
+
+
+    // ── Hamburger menu: toggle mobile nav overlay
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('nav-mobile').classList.toggle('open');
+      document.body.style.overflow =
+        document.getElementById('nav-mobile').classList.contains('open') ? 'hidden' : '';
+    }
+
+
+    // ── Scroll reveal: animate elements into view as they enter viewport
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 90);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal, .reveal-l').forEach(el => revealObserver.observe(el));
+
+
+    // ── Lightbox: open full-screen image on gallery click
+    function openLb(el) {
+      document.getElementById('lb-img').src = el.querySelector('img').src;
+      document.getElementById('lb').classList.add('on');
+    }
+
+    function closeLb() {
+      document.getElementById('lb').classList.remove('on');
+    }
+
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLb();
+    });
+
+  </script>
+
+</body>
+</html>
